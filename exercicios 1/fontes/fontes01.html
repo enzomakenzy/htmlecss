@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* Medidas Absolutas: cm, mm, in, px, pt, pc
+               Medidas Relativas: em(medida relativa ao tamanho atual da fonte)(toma como relação o M maiusculo)  
+               ex(Relativo a altura x de uma fonte)(toma como relaçao a altura X) 
+               rem(relativo a fonte escolhida no body) 
+               vw(relativo a viewport)
+               vh(altura da viewport)
+               %
+            Existem outras medidas para fontes, mas as que vamos focar é a EM, mas outra muito usada é pixel. "em" a gente fala que é o "tamanho normal" para a fonte.
+            16px geralmente tem 1em, e isso é proporcional, ou seja, se formos colocar 2em num site, ele vai ser como se fossem 32 px*/
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+<!--Usamos esse recurso chamado "font-family" para aderir uma fonte específica para o nosso projeto. Mas algumas vezes certos navegadores ou plataformas, que seja, não tem disponibilidade com certa fonte que nós combinamos. Por isso que quando colocamos a fonte, aparece uma séria de fontes seguidas que o VSCODE nos recomenda, são todas as 3 MUITO parecidas, então, se o nagevador não encontrar a primeira, passa para a próxima até achar parar na sans-serif. Podemos ver as fontes que são mais seguras para serem combinadas, lá no site "W3 scholls fonts safes combinations"-->
+<!--Também podemos recomendar fontes de uma forma genérica, como por exemplo colocar la na font-family uma fonte SEM SERIFA("sans-serif"), e esse comando sempre vai funcionar pq todo dispositivo tem uma fonta sem Serifa. Aí ela vai escolher uma fonta não serifada que mais se adeque ou que seja mais usada, uma padrão, que seja. Da mesma forma vai ser se colocar uma fonte serifada(serif), ou uma monoespaçada(monospace), e assim vai-->
+    <h1>Trabalhando com fontes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit ratione excepturi, commodi explicabo, earum iusto recusandae ex culpa similique modi nam qui voluptatem mollitia aliquam non? Commodi at corporis itaque?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione voluptatem tenetur, ullam iusto mollitia, nulla eos quod blanditiis maxime voluptates consectetur voluptatibus excepturi? Similique voluptates quibusdam possimus sed! Quas.</p>
+        <h2>Subtítulo  do exercício</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempore officia itaque atque vel voluptatem iure laborum aliquid iusto non corrupti quibusdam maxime incidunt, ipsum dolorem natus voluptatibus explicabo inventore!</p>
+        <p>Clique <a href="fontes02.html">aqui</a> para ir para uma página com uma explicação mais organizada sobre o PESO, ESTILO E SHORTHAND</p>
+</body>
+</html>

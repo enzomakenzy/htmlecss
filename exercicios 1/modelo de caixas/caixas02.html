@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(102, 102, 102);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgb(0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: normal;
+            margin-right: 30px;
+        } 
+
+        nav > a:hover {
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.315);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<!--
+    A linguagem HTML padrão tinha apenas duas tags de agrupamento genérico: a <div>(para estilos block-level) e a <span>(para estilos inline-level). No mais, eles agem da mesma maneira, servindo para juntar vários outros elementos HTML. Mas com o surgimento da HTML5, surgiram as tags semânticas de agrupamento. Isso ão significa que as <div> e <span> deixaram de existir ou ficaram obsoletas, mas seu uso agora faz menos sentido, pois temos tags para dividir as partes do nosso HTML. Entre elas temos: 
+
+        Header: Cria áreas relativas a cabeçalhos. Pode ser o cabeçalho principal de um site ou até mesmo o cabeçalho de uma seção ou artigo. Normalmente inclui títulos <h1> - <h6> e subtítulos. Podem também conter menus de navegação.
+
+        Nav: Define uma área que possui links de navegação pela estrutura de pagínas que vão compor o website. Um <nav> pode estar dentro de um <header> 
+
+        Main: É um agrupador usado para delimitar o conteúdo principal do nosso site. Normalmente concentra as seções, artigos e conteúdos periféricos. 
+
+        Section: Cria seções para a sua página. Ela pode conter o conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos. Segundo a documentação oficial da W3C, "uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho".
+
+        Article: Um artigo é um elemento que vai conter um conteúdo que pode ser lido de forma independente e dizem respeito a um mesmo assunto. Podemos usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc. 
+            
+        Aside: Delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. Normalmente um conteúdo <aside> está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre "MÚLTIPLOS NÍVEIS". 
+            
+            - Múltiplos níveis: A sua criatividade e planejamento vai definir a estrutura do seu site. Sendo assim, é possível ter um ou mais <article> dentro de uma <section> ou até mesmo criar <section> dentro de um <article>. Não existem limitações quanto a isso. 
+
+        Footer: Cria um rodapé para o site inteiro, seção ou artigo. É um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico(o que caracteriza um <aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados.
+        
+    Agora falando sobre as Sombras nas Caixas... Elas são muito úteis para dar voluma, para dar a sensação de que as caixas estão ali realmente. Ela é representada pelo comando "box-shadow" e possui 4 valores, onde a ordem sempre será:
+        
+        1 - Deslocamento Horizontal(h-offset): quanto a sombra vai andar para o lado direito(valores negativos move para a esquerda)
+        2 - Deslocamento Vertical(v-offset): quanto a sombra vai andar para baixo(valores negativos causam deslocamento pra cima)
+        3 - Embaçamento(blur): quanto a sombra vai espalhar pelo fundo
+        4 - Cor(color): Cor da sombra. É possível usar trasparência.
+            
+            ! Não exagere no uso de sombras, pois elas podem tornar seu efeito visual muito pesado. Evite tbm usar sombras coloridas, pois não existe sombra colorida. 
+            ! No DevTools você consegue um EXCELENTE AUXÍLIO para moudar a sombra do jeito que você quer tbm, basta colocar aqui normalmente um box-shadow, e la no DevTools vc vai na tag que colocou a sombra, e aperta em uns quadradinhos que está a esquerda da variável de Deslocamento Horizontal.
+
+    Neste mesmo exercício, aprendemos a como deixar uma borda de uma caixa mais arredondada também, que é utilizando o comando "border-radius" na nossa caixa desejada. Ele possui quatro valores, sendo o primeiro a parte superior esquerda, a segunda sendo a superior direita, a terceira sendo a inferior direita, e a quarta a inferior na esquerda. Podemos escrever apenas "border-radius: 10px;", por exemplo, para generalizar e dar para todos as bordas o valor de 10px. Também podemos escrever "border-radius: 10px 0px;", por exemplo, e ele irá alterar para 10px a parte superior esquerda e inferior direita, e 0px para superior direita e inferior esquerda. Por fim, podemos simplesmente dar o valor que quisermos para cada borda(seguinda a ordem que disse anteriormente), como por exemplo "border-radius: 10px 20px 30 px 40px".
+            
+            ! Podemos fazer um círculo com este comando, basta colocar "border-radius: 50%"(tbm é possível trabalhar com porcentagem por cima do border-radius).
+-->
+
+<body>
+    <header>
+        <h1> Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"> 
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci illum voluptates a temporibus modi sapiente qui. Distinctio sapiente dolores, omnis aut, ratione facilis adipisci, explicabo libero a autem voluptate pariatur.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Vídeo </p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* 
+    em HTML é "id" = em CSS é "#" (só pode um elemento)
+    em HTML é "class" + em CSS é "." (pode vários elementos)
+*/
+
+body {
+    background-color:#ebd2f0 ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #AC4FBD;
+}
+/*
+
+pode-se ver que para personalizar aquele seletor escolhido, basta digitar a hastag(#) e o nome do seletor logo a frente, sem espaços e exatamente igual a como vc escreveu anteriormente. E assim, vc personaliza tudo da forma que quiser.
+
+*/
+#principal {
+    text-align: center;
+    background-color: #AC4FBD;
+    color: #ebd2f0;
+}
+
+h2 {
+    color: #C45AD6;
+}
+
+.basico {
+    color: #f3b817;
+}
+
+.intermediario {
+    color: #3CA384;
+}
+
+.avancado {
+    color: #9334A3;
+}
+
+.destaque {
+    background-color: #f3b8174d;
+}

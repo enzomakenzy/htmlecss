@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+/* 
+Esse DIV abaixo meio que ta hospedando esse parágrafo que colocamos com o texto ao colocarmos o símbolo ">", laaa embaixo. O guanabara disse que ele era um "filho", isso significa que ele so vai mexer no parágrafo que está DENTRO da div, mas ele vai hospedar e  demos o comando "display: none;" para que não seja mostrado de cara, aí ok. Esse div abaixo desse com o comando "hover" irá praticamente mostrar o texto escondido(parágrafo filho) que nós colocamos, com todas as configuração de cores que colocamos.
+
+Esse negócio de "texto escondido" será muito útil quando quisermos abrir um texto ou afins qunado passarmos o mouse por cima de um conteúdo e aparecer la pra gente tal informação ate que o usuário tire o mouse de cima e volte a normalidade. Uma idéia boa para se fazer é fixar esse texto escondido dependendo do conteúdo do site, e dar a opção de guarda-lo depois disso.
+*/
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color:white;
+            background-color: darksalmon;
+            width: 300px;
+        }
+
+        div:hover {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+        <p>Passe o mouse sobre o texto abaixo</p>
+        <div>
+            passe o mouse aqui
+            <p>TEXTO ESCONDIDO...</p>
+        </div>
+        <p>Fim do exemplo</p>
+        <p><a href="pseudoclasse.html">Voltar para a página principal</a></p>
+        <p><a href="links.html">Ir ver mais sobre pseudoclasses</a></p>
+</body>
+</html>

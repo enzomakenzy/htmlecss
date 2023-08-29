@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Love';
+            src: url('fonts/love story ttf.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            São esses os formatos, sempre vai depender se o navegador vai pegar, ou não, mas os mais comuns é OFT e TTF. Nessa fonte não tem outro formato como a que o guanabara baixou, mas se precisar é so dar uma vírgula depois desse ultimo parênteses la do "truetype", e colocar outra url e format e por normal, pq é meio que uma precaução, se o primeiro o navegador não reconhcer, vai o outro. vc pode dar o nome que vc quiser la no "font-family".
+            */
+        }
+       body { 
+        font-family: Arial, Helvetica, sans-serif;
+       } 
+       h1 {
+        font-family: 'Love', Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+       }
+       p {
+        text-align: justify;
+       }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptas hic amet illum, dolor distinctio sequi modi doloremque voluptatum. Est ratione earum obcaecati accusamus distinctio nostrum fuga molestiae. Vitae, explicabo.</p>
+</body>
+</html>

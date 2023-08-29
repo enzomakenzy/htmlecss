@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<!--A tag <picture> vai basicamente concentrar as outras fontes de imagens que iremos colocar.-->
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/P.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/M.png" type="image/png">
+            <img src="Imagens/G.png" alt="Imagem flexível">
+        </picture>
+<!--Note que acima colocamos(começando de baixo pra cima) a tag <img> para mostrar exatamente a imagem grande que deixamos separada para mostrar no site. Entratanto, o problema vai ocorrer  quando a janela do navegador chegar perto dos 1000 pixels de largura, pois a foto n vai mais caber la(a foto G tem 1000 pixels). Então, temos para resolver isso a tag logo acima chamada <source:media:type>, que possui 3 atributos: o <type> irá falar qual o tipo de imagem que será gerada, no caso acima é png; a <srcset> é a imagem em si que colocamos que será gerada quando o tamanho indicado for atingido(no caso, quando a tela tiver menos que 1050 pixels, o navegador irá gerar a imagem M no canto da G); por fim, a <media> é o tamanho máximo da tela, e, se o tamanho for menor do que esse indicado, aí irá trocar para a imagem que selecionamos(nesse caso, a M)(basicamente, é assim, seguindo o exemplo acima, se o tamanho da tela for menor do que 1050px, então vai gerar a imagem M. Seguindo a lógica no outro <source>, se o tamanha da tela for menor do que 750px, então vai gerar a imagem P).-->
+<!--Um último e MUITO IMPORTANTE ponto a ser falado é que existe uma ORDEM entre os <source>, e nessa nossa configuração, os itens mais acima sejam os menores tamanahos para <max-width> e que os seguintes sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a imagem padrão.-->
+    <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+           <audio src="midias/happy-mistake.mp3" controls></audio>
+<!--Quando colocamos a tag <audio> e apertamos enter, o HTML5 nos recomenda uma estrutura básica de <src>(para imagens vc pode ver que é <srcset>, mas para áudio ja é outra coisa, é <src>) para apenas colocarmos o áudio destinado. Logo a frente podemos colocar, por exemplo, o tag <autoplay> para tocar imediatamente(entretanto, alguns navegadores não conseguem captar este comando, o próprio chrome n detecta) e podemos colocar a tag <controls>, que irá aparecer aquela barrinha para darmos play na música, controlar o áudio e etc. Na segunda página tem mais detalhes sobre os áudios.-->
+    <br>
+    <p>Clique <a href="pag002.html" target="_blank" rel="external">aqui</a> para ver mais detalhes sobre os recursos de áudio</p>
+</body>
+</html>

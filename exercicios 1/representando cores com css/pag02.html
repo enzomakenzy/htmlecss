@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* O VS Code considera o degrade como se fosse uma imagem normal, então, quando colocamos para ir para cima (bottom), ele vai simplesmente repetir o degrade várias vezes naquele tamanho la, quase como se fosse uma linha de um título. Então antes do comando normal do degrade, nós colocamos essa configuração global das CSS, que vai considerar a página como um todo para o degrade. usando o "height 100%"(altura 100%) dentro das chaves e tem que ter o "*" antes da primeira chave(ela quem realmente vai definir a configuração global). */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(90deg, #634CCE, #A231BD, #DB4181, #FF6740, #FFD251);
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<!--o background-image vai servir para colocarmos o estilo degradê no nosso site, dps selecionamos a opção "linear-gradiente". Depois vamos precisar colocar pelo menos 3 características para formar o gradiente, são elas: a DIREÇÃO, a primeira cor, a segunda cor. o background-attachment: fixed, ainda vamos ver melhor, mas ele vai fixar a imagem do degrade na tela, pq se vc fazer o teste e soltar e rolar a barrinha pra baixo, vai ter uma parte que n faz parte do gradiente por la.-->
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

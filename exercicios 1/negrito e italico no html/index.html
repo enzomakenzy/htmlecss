@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {background-color: rgb(151, 246, 151);}
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+        <h2>Negrito / Destaque</h2>
+<!--Existem duas maneiras de colocarmos NEGRITO / ITALICO. Podemos colocar de uma maneira semântica, e de uma maneira não semântica.-->
+            <p>Nesta frase temos um <b>termo em negrito</b> usando a tag "b"(não semântico).</p>
+            <p>Nesta frase temos um <strong>termo em destaque</strong> usando a tag "strong"(semântico).</p>
+        <h2>Itálico / Ênfase</h2>
+            <p>Nesta frase temos um <i>termo em itálico</i> usando a tag "i"(não semântica).</p>
+            <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag "em"(semântica).</p>        
+        <h2>Texto marcado</h2>
+<!--O mark é como se fosse um marca texto, quando colocamos somente o "mark" por si só, o texto marcado será naquela cor natural amarelo neon com o HTML. Caso você queira mudar a cor do marcador, vc não irá usar mais o HMTL, pois ele não é de estilização. Iremos adaptar a tag "mark" para darmos outras cores ao marcador. Logo, a mesma tag deixará de ser HMTL e se tornará um comando em CSS, para que seja possível a modernização.-->
+            <p>Podemos criar também <mark>um texto marcado</mark> usando a tag "mark".</p>
+<!--A tag "style" é TOTALMENTE focada em CSS, na parte de estilização. Nestes exemplos nós mudamos a cor do marcado para uma que desejamos com essa mesma tag "style" e logos após nós selecionamos a opção "background-color" para mudar a cor do marcador. Agora imagine por exemplo que vc queira marcar um site todo com a mesma tonalidade do marcador várias e várias vezes. Você iria passar muito tempo colocando a tonalidade exata necessária repetidas vezes, o que daria um certo trabalho. Para isso, podemos generalizar a tag "style" la na parte de "head" para se aplicar em todos os "marks" que desejemos, facilidando bastante o trabalho.-->
+            <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+        <h2>Texto grande e pequeno</h2>
+<!--Essas tags é para, como o nome diz, deixar as letras maiores ou menores. Mas o "big" como está descrito abaixo, está entrando em desuso. Pois se nós queremos deixar um texto grande podemos simplesmente fazer isso com o CSS, da mesma forma que o small. Mas, de acordo com os pensamentos do guanarabara, o "small" acaba sendo mais importante que a tag "big", pois é bem mais fácil vermos letras pequenas em partes de textos do que uma letra grande do nada. Por isso acha que o "big" está entranod em desuso, e o "small" não. Entretanto, podemos alterar ambos no CSS tbm.-->
+            <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+        <h2>Texto deletado</h2>
+<!--Aqueles textos la onde tem um risco no meio da palavra-->
+            <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+        <h2>Texto inserido</h2>
+<!--Texto sublinhado-->
+            <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+            <p>Temos também o <u>sublinhado</u> com a tag "u", mas ele é não semântico e provavelmente vai entrar em desuso nos próximos anos.</p>
+        <h2>Texto sobrescrito</h2>
+<!--Deixar tais caracteres como se fosse aquele símbolo de potenciação, tlgd? por cima.-->
+            <p>Para inserir coisas do tipo x<sup>20</sup>+3.</p>
+        <h2>Texto subscrito</h2>
+<!--Deixar tais caracteres menores e na parte debaixo, como nas fórmulas químicas.-->
+            <p>Para inserir coisas do tipo H<sub>20</sub>.</p>
+</body>
+</html>

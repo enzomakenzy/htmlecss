@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+
+<!-- 
+    
+    Aqui nós vamos começar a aplicar o modelo de caixas no nosso código, é nele que vamos contruir insfaces web e começar a dar forma aos sites. De forma simples e objetiva, baseado em um conceito chamado "box level", a grande maioria dos elemntos HTML que temos no nosso site são como caixas. Elas são conteainers que armazenam conteúdos ou até mesmo outras caixas. Tudo começa a partir do conteúdo(como por exemplo como editamos abaixo com o "h1", "p", e "a"), e por padrão, toda caixa é composta apenas pelo conteúdo e não possui nenhuma características para decorarmos nossa "caixa" no modelo que nós quisermos... Ela não possui padding, nem border, nem outline e nem margin. Todo conteúdo tem largura(widht) e altura(height), como ja vimos anteriormente, e eles vão estar bem presentes em cada uma das características das nossas caixas, ja que vamos ter que personaliza-las ao nosso favor, a esse conjunto, damos o nome de "box-size", que é o tamanho da caixa(exatamente as bordinhas que estão grudadas ao nosso texto ou que seja).
+
+    - Em volta do nosso conteúdo, temos a borda(border), e ela pode ter espessura, cor e formato. 
+    - Entre a borda e o conteúdo, temos o preenchimento(padding).
+    - Da borda pra fora dtemos a margem(margin).
+    - E entre a margem e o contorno, temos a contorno(outline), que é muito pouco utilizado, mas existe.
+
+    Logo abaixo tem-se exemplos de configurações de cada uma...
+
+    Vale ressaltar que, muitas vezes nós vamos ficar em dúvida das medidas corretas que iremos querer para dar aquele design legal ao nosso site. E para isso, o DevTools vai nos ajudar bastante. Basta inspecionar o local no site em questão e resolver por la mesmo as medidas de forma simples e prática, sem mexer no código original, lá podemos ver de forma rápida de como queremos exatamente o nosso projeto, o que é muito útil. Após isso, basta colocarmos as medidas que colocamos lá em nosso código real aqui no VsCode. 
+
+    Tem uma forma de centralizar a nossa caixa tbm que é utilizando o comando "margin: auto;", não está abaixo, mas isso vai centralizar bonitinho em todos os tipos de telas que esteja a mostra    
+    
+    Por fim, nós vimos que existem caixas "box-level"(que ocupam a margem toda da tela) e a "inline-level" que ocupa somente aquela pequena parte onde está o conteúdo em si. O "h1" é por si só um elemento box-level, mas nós podemos mudar ele para o estilo inline-level. Basta mudar o seu display de "block" para "inline" colocando no h1, por exemplo, "display: inline;" e pronto. Da mesma forma podemos mudar para quaisquer outras caixas. 
+-->
+
+    <style>
+
+        /* box-level */
+        h1 {
+            background-color: lightgoldenrodyellow;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkgrey;
+            
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+        }
+
+        /* Inline-level */
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+            padding-top: 10px; 
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+        }
+
+        /* box-level */
+        p {
+            text-align: justify;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+        <p>Parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+        <p>Vamos ver tbm tudo isso tbm em modelo simplicado, ou seja, em <a href="caixa01shorthand.html">shorthand</a></p>
+</html>

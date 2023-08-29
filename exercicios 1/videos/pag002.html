@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes sobre os vídeos</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+<!--Para inserir mais detalhadamente um vídeo que esteja no nosso próprio servidor, nós seguimos a mesma lógica que com o áudio, colocamos vários formatos de vídeo para caso um não funcionar, outro agir. Colocando sempre um arquivo mais leve antes dos mais pesados.-->
+<!--Os tipos de formato de vídeo são: MPEG(MP4), WEBM, e OGV(mas os dois primeiros são os que possuem maior compatibilidade com os navegadores atualmente). O Edge, Safari e Chrome possuem suporte mp4 e m4v, mas o firefox e opera possuem apenas webm e ogv.-->
+        <video controls poster="" width="560" loop>
+            <source src="midia/meu-video.webm" type="video/webm">
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.m4v" type="video/m4v">
+            <source src="midia/meu-video.ogv" type="video/ogv">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+<!--<width> vai indicar a largura que o vídeo vai ter na tela; <poster> configura uma imagem que vai aparecer como uma capa enquanto que o visitante não aperta "play"; <controls> vai configurar se os controles do vídeo vão aparecer na parte inferior da mídia. Por padrão, os controles não aparecerão, mas basta colocar a palabra controls na tag <video>; <autoplay> diz para o navegador se o vídeo vai começar a tocar automaticamente assim que a página for carregada(mas como ja foi dito, vai depender das configurações do navegador de cada um). <loop> irá recarregar o vídeo novamente assim que o mesmo terminar.-->
+<!--entranto, é complicado fazer desse jeito pois ficariam MUITOS arquivos pesados para o seu site, então, seria uma opção muito mais plausível adicionar vídeo de serviços de hospedagem de vídeo, como o youtube ou vimeo. Esses são serviços para a hospedagem de vídeos que vai evitar consumir nossos pró´rios recusos de host contratado. Cda um tem duas vantagens e desvantagens-->
+<!--o Youtube é o serviço de hospedagem de vídeos qmais popular do mundo e é gerenciado pelo Google. Sua principal vantagem é que seus servidores são ultra rápidos. Por outro lado, a ideia do Google é deixar todos os vídeos públicos e disponíveis, o que pode ser uma dor de cabeça caso você queira limitar quem vai ter acesso a determinado vídeo(uma escola online, por exemplo, onde queremos que apenas os alunos matriculados possam assistir).-->
+<!--O Vimeo resolve o problema que apontamos anteriormente. Ele permite limitar quem vai poder ver o vídeo, o que é especialmente vantagjoso para quem quer criar produtos em forma de vídeo, entregues por demanda dentro de um site personalizado. Como desvantagens desse serviço, ele é pago por uma taxa anual e seus algoritmos não são tão eficientes quanto os do Youtube, logo, os vídeos apresentam pequenos travamentos às vezes(mas nada com o que se preocupar).-->
+    <h1>Inserindo vídeos do YouTube</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yLuVhRiSWac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vímeo</h1>
+        <iframe src="https://player.vimeo.com/video/378753132?h=3bf6c54ef1&color=5cd7d4&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<!--Para pegar e inserir o código HTML do vimeo e Youtube, basta escolher o video, apertar em "compartilhar" e incorporar o código. Logo após você copia e cola o código e pronto. Você estará consumindo a banda dos servidores do vimeo ou youtube e não as suas. -->
+</body>
+</html>

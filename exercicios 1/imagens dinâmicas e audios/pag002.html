@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mais sobre áudios</title>
+</head>
+<body>
+<!--Existem 3 tipos de compatibilidades de áudios que os navegadores suportam sem ser a "MP3", que são: WAV e OGG. Como o chrome não conseguiu detectar o <autoplay> ali com o formato mp3, vamos demonstrar como aplicar isso em outros formatos e com semântica coerente.-->
+    <h1>Detalhes sobre áudios num site</h1>
+        <audio preload="auto" controls autoplay loop>
+            <source src="midias/guanacast-33.mp3" type="audio/mpeg">
+            <source src="midia/guanacast-33.ogg" type="audio/ogg">
+            <source src="midia/guanacast-33.wav" type="audio/wav">
+            <p>Infelizmente, seu navegador não consegue reproduzir áudio. Clique <a href="midias/guanacast-33.mp3">aqui</a> para baixar o arquivo MP3</p>
+        </audio>
+<!--Nós vamos digitar normalmente a tag <audio>, mas vamos remover o parametro <src> e vamos colocar um source que é o <source:src>, vamos colocar o audio destinado na parte do <src> normalmente, e depois vamos selecionar o tipo que será o audio na parte do <type>, correspondente ao tipo de audio que vc estará colocando. No exemplo acima, só o primeiro de MP3 irá funcionar, o resto, como n temos o formato, n irá, mas estará funcionando corretamente caso tivéssemos. -->
+<!--Vale relembrar que a SEQUENCIA é muito IMPORTANTE. Nesse caso acima, o site irá tentar carregar primeiro o MP3, caso n dê, ai tenta o OGG, e caso n dê, tenta o WAV. E ainda sim, caso n conseguir NENHUM, irá mostrar uma frase que mostramos no parágrafo e fornecer um link para download do audio-->
+<!--o atributo <preload> indica se o áudio será pré-carregado ou não e aceita três valores: <metadata> vai carregar apenas as informações sobre o arquivo(tamanho, tempo, informações de direitos, etc)(tbm carrega a barrinha lá do audio, mas quando dermos play, ele vai demorar um pouco mais pq ele não vai carregar automaticamente assim que vc entrar no site, e sim so quando vc der play); <none> não vai carregar absolutamente nada até que o usuário clique no botão PLAY ou um script que inicie a reprodução; <auto> vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte play(isso aqui pode se tornar complicado quando o arquivo for grande como o de cima, pq ja é mais 32MB que o site precisará carregar de cara, então é bom sempre ver isso)-->
+<!--na frente de <preload> nós tbm podemos colocar outras configurações: o atributo <controls>(como ja vimos)vai apresentar o player na tela. Caso não seja colocado na tag <audio>, o controle será transparente e o usuário não poderá interagir com ele. O atributo <autoplay>, quando inserido, vai iniciar a reprodução do áudio assim que a página for carregada. E o atributo <loop> vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução.-->
+</body>
+</html>

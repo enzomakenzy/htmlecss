@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--
+        SELETORES PERSONALIZADOS, RESUMO
+        # = id
+        . = class
+        : = pseudoclass
+        :: = pseudoelement
+        > = children
+    -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: yellow;
+        }
+
+        .primeiro::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: light;
+            color: darkgray
+        }
+
+        .segundo::after {
+            content: ' ←'; 
+        }
+
+        .segundo::before {
+            content: '→ ';
+        }
+    </style>
+</head>
+<!--
+    Indo para outras pseudoclasses... Temos a opção ":visited" que irá praticamente vc vai dar uma característica ao link que já foi visitado anteriormente pelo usuário, nesse caso colocamos para ficar com a cor de um vermelho mais escuro dos links que não foram visitados. E ainda na ":hover", nós colocamos para o link ficar com um underline na palavra toda e mudar a cor de preto quando o mouse passar por cima. Também vimos o ":active", que irá dar uma característica a palavra que nós estivermos clicando, no caso acima, deixamos a cor amarela.
+
+    Indo adiante com os tipos de pseudoclasses, temos o "::after" e o "::before" que irá dar características para antes e depois dos elementos escolhidos. No primeiro link eu dei literalmente o nome de "primeiro" utilizando uma "class" para mudar somente ele, e assim coloquei a pseudoclasse "::after" com suas demais características, e nesse caso colocamos características para indicar que é um link com a tag "content", que vai escrever o que nós queiremos. Logo abaixo temos mais um exemplo so que com setas. 
+-->
+<body>
+    <h1>Personalizando Links</h1>
+        <ul>
+            <li class="primeiro"><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+            <li class="segundo"><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">Canal do Youtube</a></li>
+            <li><a href="https://www.cursoemvideo.com" target="_blank" rel="external">Site do CursoemVideo</a></li>
+        </ul>
+</body>
+</html>

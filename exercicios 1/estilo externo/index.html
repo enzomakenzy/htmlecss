@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Locais ou Internos</title>
+    <style>
+        body {
+            background-color: bisque; 
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+        }
+        h1 {
+            color: blueviolet;
+            background-color: khaki;
+            font-size: 1.5em;
+        }
+        h2 {
+            color: crimson;
+            font-size: 1.2em;
+        }
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<!--AQUI ESTÁ AS MESMAS INFORMAÇÕES QUE ESTEVE NA AULA ANTERIOR!! São os mesmo conceitos, entretanto, nós aplicamos ela na parte da cabeça do nosso código, ou seja, ele vai se aplicar para cada coisinha que estiver no nosso corpo. Como vc pode ver acima, aplicamos a tag <style> e dps digitamos a parte que desejamos fazer estilizações, como foi o "body", que é so abrirmos chaves("{}") e depois colocar o que desejamos que o body mude dentro destas chaves. Assim como foi para todo o resto, o que facilita bastante, pois não vamos sair fazer isso para TODOS os H1 ou TODOS os h2 e parágrafos e etc. Nós apenas colocamos no corpo, dentro de uma tag <style> e é isso, selecionamos a coisa que desejamos estilizar.-->
+<!--O primeiro estilo de CSS que iremos ver, é o mais simples de todos, e o mais trabalhoso tbm, que é o INLINE. Nele nós vamos em cada tagzinha pra aplicarmos tal configuração que desejamos, o que é bastante trabalhoso, por isso n muito recomendável, pois fica misturando muito a linguagem de marcação com a de estilização, o que deixa nosso código muito poluído e confuso. Uma vantagem seria se fossemos mudar uma coisa específica e afins. Para mudar o estilo de alguma coisa, nós usamos a tag <style> no local que desejamos e aplicamos tudo dentro dele la mesmo, ou boa parte, pelo menos ate onde vi aq kkkkkk. Como foi feito abaixo em cada parágrafo. Em cada um dos títulos, nós usamos a tag <style> e depois selecionamos a tag <color> para mudarmos a cor da letra a uma que escolhermos.-->
+<body>
+    <h1>Capítulo 1</h1>
+        <h2>Capítulo 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima repudiandae culpa et cumque. Corporis dolorem non aspernatur accusamus, modi, dolores suscipit, harum nobis magnam repellat optio labore sit numquam assumenda?</p>
+        <h2>Capítulo 1.2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic temporibus laudantium iste omnis! In perspiciatis fuga fugit officiis velit dicta qui accusamus pariatur nesciunt deleniti porro, reprehenderit quaerat illum a!</p>
+    <h1>Capítulo 2</h1>
+        <h2>Capítulo 2.1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis expedita consequatur natus quibusdam voluptatum delectus deserunt distinctio, excepturi ratione sit ad neque amet enim veniam itaque nam, vel nesciunt doloribus.</p>
+<!--na parte do <body> nós aplicamos novamente a tag <style> ne ja que é tudo nela, e selecionamos <background-color> que irá mudar a cor do fundo de toda a página da web, dps é so escolhermos a cor que nós queremos e afins(aplicamos isso tbm nos títulos de primeira ordem). Ainda no <body> pode-se observar que escolhemos uma fonte específica para atuar em toda página, usando a tag <font-family> e dps escolhemos a desejada, no caso aq foi Arial. E ainda la no <body> nós escolhermos o tamanho da fonte padrão da nossa página, que foi de 20 pixels. Pode-se ver abaixo, nos títulos especificamente, que tem a tag <font-size> + um número e um "em", que vamos ver melhor depois, mas ela vai controlar o tamanho da letra baseado no tamanho que deixamos a nossa fonte la no body(no caso, os 20 pixels). Aí deixamos o título 1 maior com 1.5em, e os titulos de segunda ordem deixamos com 1.2em. Por fim, nós justificamos os parágrafos utilizando, na tag <style> claro, a tag <text-align> que é o alinhamento do texto, que deixamos em <justify>, texto justificado.-->
+</body>
+</html>

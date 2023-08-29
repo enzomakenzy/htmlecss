@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+       <h2>Listas Ordenadas</h2>
+<!--Listar ordenadas são bastantes úteis quando a ordem numérica de certas coisas é importante numa lista. Mas ao escrevermos caaaada número da lista é bem cansativo, principalmente quando nós estamos sla no item 40 e lembramos que teremos que atualizar um item la no numero 13 por exemplo, aí teremos que atualizar TOOOOODA a sequência que fizemos até o 40 dnv e é bem complicado. Para isso as listas servem, pois elas vão prover da sequência automaticamente, nos poupando trabalho. A lista é formada dentro do comando "ol" e cada item é listando dentro do comando "li"(no HMTL5 não é mais necessário fechar a lista com o "/li", vai a seu critério). Nós podemos tbm colocar um tipo(dado pelo comando "type" logo após o "ol")de lista numérica, por exemplo: tipo "1" é uma lista com ordem numero comum(1, 2, 3...), tipo "a" é uma lista com sequência alfabética(a, b, c...), tipo "A" é uma lista com sequência alfabética maiúscula(A, B, C...), e o tipo "i" é uma sequência em algarismos romanos(i, ii, iii, iv...)(nós tbm podemos colocar "I", que aí ficaria os números romanos em maiúsculo, que é bem mais comum). E por fim, podemos iniciar uma lista sem ser pelo "inicial"(sem começar somente pelo A, 1 OU I/i). Com o comando "start"(vindo logo após o comando "type") podemos selecionar em qual iremos começar. Por exemplo, vc colocou uma sequência númerica e quer começar o número 4, aí poe o número 4 no "start" e pronto. Entranto, o HTML generaliza neste quesito, ou seja, imagina que vc quer fazer uma lista alfabética mas vc quer começar pela letra "F", aí vc iria ver em qual posição fica a letra D(que no caso é a sexta posição) e então colocaria o número 6 lá para funcionar, e não colocar a letra "F" em si-->
+          <ol type="a" start="6">
+             <li>Acordar</li>
+             <li>Ligar para o João</li>
+             <li>Tomar café</li>
+             <li>Escovar os dentes</li>
+             <li>Ir para a faculdade</li>
+             <li>Almoçar</li>
+             <li>Ir para o trabalho</li>
+             <li>Voltar para casa</li>
+             <li>Jantar</li>
+             <li>Dormir</li>
+          </ol> 
+        <h2>Listas não ordenadas</h2>
+<!--Aqui é somente uma lista onde a ordem não irá mudar em nada no sentido da sua lista. Podemos alterar o tipo de pontinho que fica em cada objeto da lista, mas o HTML não nos mostra as opções. Mas entre os tipos nós temos a opção "disc", a opção "circle", e a "square".-->
+          <ul type="disc">
+             <li>Pão</li>
+             <li>Leite</li>
+             <li>Tomate</li>
+             <li>Alface</li>
+             <li>Manteiga</li>
+             <li>Arroz</li>
+             <li>Feijão</li>
+          </ul>  
+        <h2>Minhas linguagens favoritas</h2>
+<!--Juntando listas...-->
+          <ol>
+             <li>Antigas</li>   
+                 <ol type="a">
+                     <li>Clipper</li>
+                     <li>Visual Basic</li>
+                     <li>Fortran</li>
+                     <li>Delphi</li>      
+                 </ol>      
+             <li>Novas</li>
+                 <ol type="a">
+                     <li>PHP</li>
+                     <li>Python</li>
+                     <li>Javascript</li>
+                     <li>Kotlin</li>
+                 </ol>
+          </ol>
+        <h2>Meus jogos favoritos</h2>
+<!--Uma dica MUITO boa é para quando vamos querer mudar várias palavras de uma vez só. Por exemplo, caso queiremos transformar os "ol" em "ul", nós iríamos passar muito tempo só trocando um de cada vez. Então tem um macete onde nós ficamos com a tecla ALT selecionada o tempo todo, e depois vamos saindo selecionando com o mouse cada palavra que vamos trocar, nesse caso, selecionamos cada "ol" e colocamos em "ul". E pronto, todas as palavras vão sendo digitas ao mesmo tempo nos locais onde foi selecionado com o mouse. E da mesma forma tbm serve para escrevar... No exemplo abaixo nós colocamos todos os types ao mesmo tempo seguindo o macete explicado. type="square"-->
+          <ol>
+             <li>Nintendo</li>
+                 <ul type="square">
+                     <li>Marios Bros</li>
+                        <ul type="circle">
+                           <li>Mario Bros 3</li>
+                           <li>Mario: Lost Levels</li>
+                        </ul>
+                     <li>Ninja Gaiden</li>
+                 </ul> 
+             <li>Super Nintendo</li>
+                 <ul type="square">
+                     <li>Mario</li>
+                     <li>Donkey Kong</li>
+                 </ul>
+             <li>PlayStation</li>  
+                 <ul type="square">
+                     <li>Final Fantasy</li>
+                     <li>Castlevania</li>
+                 </ul>
+          </ol> 
+        <h2>Lista de Definição</h2>
+<!--O tipo mais tranquilo de lista, usamos o comando "dl" para ela. Nela nós colocamos uma palavra que ficará a esquerda(no site) com o comando "dt" e colocamos o comando "dd" que ficará abaixo da palavra que está no "dt" e mais na direita(no site). O "dt" é responsável por mostrar a palavra que iremos definir, já o "dd" é a sua definição em si. Vale citar que o google ele prioriza sites que usam o listas de definições.-->
+        <dl>
+            <dt>HTML</dt>
+               <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+            <dt>CSS</dt>
+               <dd>Linguagem de marcação para a criação de design de um site</dd>
+            <dt>Javascript</dt>
+               <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+        </dl>   
+</body>
+</html>

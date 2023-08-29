@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses no CSS</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: beige;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover {
+            background-color: aqua;
+        }
+    </style>
+<!--
+    Nós vamos ver boa parte das coisas acima no próximo capítulo, o foco agora é as subclasses. Entretanto, fazendo um breve resumo, o "display" vai organizar os "divs" para se ajustar ao tamanho da janela; o "border" vai literalmente dar uma borda para o nosso conteúdo, e fizemos o shorthand nesse, colocando uma borda de 1px, sólida e da cor preta. O resto ja foi visto, fundo de cor, texto alinhado, altura e largura.
+
+    As subclasses são bem varidas, mas nessa aula o guanabara decidiu focar no "hover". O hover está relacionado ao momento que nós estivermos com o nosso mouse por cima do conteúdo que nós marcamos com o hover, ou seja, indo pra um exemplo, nós podemos colocar para que tal coisa mude de cor, como foi com o exemplo acima 
+
+    Para reforçar, nós vimos que o "id" corresponde a "#", o class corresponde a ".", e por fim, a subclass corresponde a ":". Como está exposto acima, nós devemos ressaltar anteriormente qual é o elemento que nós devemos por a nossa subclass, diferente do id e class, pois se so colocarmos solta ela vai generalizar tudo. 
+-->
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <p>Clique <a href="hover.html">aqui</a> para ir para a outra página só sobre o hover</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+<!--Para usar "hyperlinks" nós devemos selecionar a frase ou conteúdo desejado e colocar a tag "a" sobre ele. No qual a principal característica desta tag é o "href" que cria uma referência hipertexto, ou seja, é nele que iremos colocar o nossa URL.-->
+<!--Os hyperlinks são bem úteis, mas podem trazer problemas se n gerenciados da maneira correta, como por exemplo se formos colocar links EXTERNOS(que pertencem a outro website). Quando formos colocar hyperlinks que estejam relacionados a nosso próprio site, nós iremos por para abrir dentro da mesma aba que estivermos, aí so recarregaria sem problemas e o usuário permaneceria ainda em nosso site(o que chamamos de link INTERNO). Entretanto, se formos colocar de outros, é mais recomendável que utilize os hyperlinks para abrir em outra aba(link externo), fazendo com que o usuário ainda permaneça no nosso sem mais problemas.-->    
+        <p>Você pode acessar o meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no GitHub</a></p>
+        <p>Você também pode acessar o meu <a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external">canal gratuito no Youtube</a></p>
+<!--Para decidirmos se será um link interno ou externo, nós usamos logo após a URL(como mostrado nos exemplos acima) a tag "target" e a tag "rel". A tag "target" é responsável por CONTROLAR onde o site de destino vai abrir, ela suporta diversos valores, entre eles temos: "_blank" que irá abrir o link em uma nova janela em branco; "_self" que irá abrir o link a janela atual; tem outros 3 tipos, mas eles são RARAMENTE usados, caso queira ver, tem no conteúdo em pdf do guanabara. A tag "rel" é mais um complemento, mas ainda sim é necessária hoje. Ela é responsável por designar se será um link externo ou interno, dentre os tipos nós podemos citar: "next" indica que o link é para a próxima parte do documento atual; "prev" indica que o link é para a parte anterior do documento atual; "author" indica que é um link para o site do autor do artigo autal; "external" indica que é um link para outro site que não faz parte do site. Basicamente, os três primeiros é interno, e o "external", como seu nome diz, é externo.-->
+<!--Outro negócio que é bem legal de se fazer é a tag "hreflang", ela vai indicar qual é o idioma principal do site para onde o link está desviando o fluxo de navegação, isso vai ajudar os softwares e nageadores a lidar com a tradução automaticamente para o usuário. Veja o exemplo abaixo:-->
+        <p>Clique<a href="https://www.w3schools.com/html/" hreflang="en"> aqui</a> para ir diretamente para o site do w3schools</p>
+    <h1>Usando Links</h1>
+        <p>Esta é a primeira pagia do site. Se você quiser, pode acessar também a minha <a href="pag002.html" href="_self" rel="next">segunda pagina</a></p>
+ <!--Com liks internos(aqueles que pertecem a nosso próprio website) nós nem precisamos colocar toda a URL, basta apenas colocar a outra página que foi reproduzida. Mas, para isso, as demais páginas devem estar dentro da mesma página "principal"(index.html)(basta aperta CTRL + ESPAÇO para aparecer as opções automaticamente). Com isso, criamos basicamente um sistema para navegar entre as páginas do seu site-->   
+        <p>Você também pode acessar a nossa <a href="Notícias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+    <h1>Links para download</h1>
+<!--Para transformar um link em download, basta apenas pesquisar o tipo respectivo do arquivo que vc estiver baixando no site Media Types. Como está na parte do "zip", nós abrimos um link com o comando "a" e colocamos o nosso arquivo zipado nele. Depois colocamos a tag "download" e selecionamos novamente o arquivo desejado(se não colocarmos a tag "download", ele so tentaria abrir o arquivo de alguma forma). E, por fim, nós colocamos o tipo desejado relacionado ao formado do arquivo, no caso do zipe, no site mostra que é o "application/zip", e aí tudo certo. Mas no arquivo PDF é diferente, não tem como fazer o download automaticamente, ele sempre irá abrir o pdf que vc selecionar no momento. Isso pq o download automático de PDF sempre irá depender do seu navegador e se vc irá deixar os downloads em pdf automático ou não. Então, basta colocarmos um "target="_blank" pra ele abrir em outra aba e o próprio usuário decidir se irá baixar ou não."-->
+        <ul>
+            <li><a href="Livro/livro.pdf" target="_blank">Baixar o livro em PDF</a></li>
+            <li><a href="Livro/meulivro.zip" download="meulivro.zip" type="application/zip">Baixar livro compactado em ZIP</a></li>
+        </ul>
+</body>
+</html>
