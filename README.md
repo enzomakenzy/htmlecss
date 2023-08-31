@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-<a href="https://enzomakenzy.github.io/htmlecss/projeto/index.html">Executar o Projeto Android.</a>
+<a href="https://enzomakenzy.github.io/htmlecss/exercicios 1/exercicio 1">Executar o Exercício 01.</a>
